@@ -3,6 +3,8 @@ body {
   max-width: 600px;
   margin: 60px auto;
   padding: 0 20px;
+  color: #111;
+  background: #fcf5ee;
 }
 
 h1 { font-size: 3rem; margin: 0 0 40px; }
