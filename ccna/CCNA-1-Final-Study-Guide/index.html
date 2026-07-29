@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A clean CCNA 1 final exam study tool with answer explanations and spaced repetition."
+    />
+    <title>CCNA 1 Final Study</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1 class="study-title">CCNA 1: Final Exam Review</h1>
+    </header>
+
+    <main class="study-shell">
+      <nav class="mode-switch" aria-label="Study mode">
+        <a href="./" data-mode="random">Review</a>
+        <a href="?mode=list" data-mode="list">All questions</a>
+      </nav>
+
+      <div id="app" aria-live="polite">
+        <p class="loading-state">Loading questions…</p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <a
+        href="https://itexamanswers.net/ccna-1-v7-0-final-exam-answers-test-online.html"
+        rel="noreferrer"
+        target="_blank"
+        >Question source</a
+      >
+    </footer>
+
+    <script src="./offline-questions.js" defer></script>
+    <script src="./app.js" defer></script>
+  </body>
+</html>
