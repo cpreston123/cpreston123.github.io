@@ -690,7 +690,7 @@ function renderQuestion(question, scope, state) {
             const classes = ["choice"];
             if (state.checked && option.correct) classes.push("is-correct");
             if (state.checked && selected && !option.correct) classes.push("is-wrong");
-            return `<label class="${classes.join(" ")}">
+            return `<label class="${classes.join(" ")}"><div class="choice-inner">
               <input
                 type="${inputType}"
                 name="${scope}-${question.id}"
@@ -701,7 +701,7 @@ function renderQuestion(question, scope, state) {
               />
               <span class="choice-number" aria-hidden="true">${displayIndex + 1}</span>
               <span class="choice-content">${prepareHtml(option.html, scope)}</span>
-            </label>`;
+            </div></label>`;
           })
           .join("")}
       </fieldset>`;
